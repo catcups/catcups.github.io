@@ -1,0 +1,39 @@
+<div class="main-inner">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="post-header">
+            <div class="post-author clearfix">
+                <a class="avatar fleft" href="<%= theme.authorLink %>" target="_blank">
+                    <img width="48" src="<%= theme.avatar %>" alt="avatar"/>
+                </a>
+                <p><span class="label">作者</span>
+                    <a href="<%= theme.authorAbout %>" target="_blank"><%= post.author %></a>
+                    <span title="最后编辑于<%= date(post.date) %>"><%= date(post.date) %></span>
+                </p>
+                <p><%= theme.authorDesc %></p>
+            </div>
+            <h2 class="post-title"><%- post.title %></h2>
+            <div class="post-meta">
+                <a href="<%- url_for(post.path) %>#disqus_thread">评论：X</a>
+                <em>·</em>
+                <a href="<%- url_for(post.path) %>">阅读：Y</a><em>·</em>
+                <span>喜欢：Z</span>
+            </div>
+        </div>
+        <div class="post-content markdown-body">
+            <%- post.content %>
+        </div>
+        <div class="post-tool">
+            <a class="btn-donate" href="javascript:void(0);" data-cid="52" title="95">
+                <i class="fa fa-thumbs-up" aria-hidden="true"></i> 赏
+            </a>
+        </div>
+        <% if (post.tags){%>
+        <div class="post-tags">标签：
+            <% post.tags.each(function(tag){ %>
+            <a href="<%- url_for(tag.path) %>"><%= tag.name %></a>
+            <% }) %>
+        </div>
+        <% }%>
+    </article>
+    <%- partial('_partial/comments', {post: post}) %>
+</div>
