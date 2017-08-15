@@ -1,4 +1,4 @@
-# Hexo Configuration
+﻿# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -65,8 +65,13 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# Place your favicon.ico to /source directory.
+## 这是一条注释
+favicon: /favicon.ico
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/catcups/catcups.github.io.git
+  branch: master
