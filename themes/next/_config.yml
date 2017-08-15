@@ -1,4 +1,4 @@
-# ---------------------------------------------------------------
+﻿# ---------------------------------------------------------------
 # Site Information Settings
 # ---------------------------------------------------------------
 
@@ -438,8 +438,12 @@ use_motion: true
 # Fancybox
 fancybox: true
 
-# Canvas-nest
-canvas_nest: false
+# --------------------------------------------------------------
+# background settings
+# --------------------------------------------------------------
+# add canvas-nest effect
+# see detail from https://github.com/hustcc/canvas-nest.js
+canvas_nest: true
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
