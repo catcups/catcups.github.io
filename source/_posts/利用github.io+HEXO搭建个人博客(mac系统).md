@@ -1,5 +1,7 @@
 ---
 title: 利用github.io+HEXO搭建个人博客(mac系统)
+date: 2017-02-09 16:39:00
+comments: true
 ---
 ## 一、环境安装
 
