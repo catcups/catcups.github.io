@@ -1,200 +1,568 @@
-<!DOCTYPE HTML>
-<html class="no-js" lang="zh-CN">
-<!--
-//                            _ooOoo_
-//                           o8888888o
-//                           88" . "88
-//                           (| -_- |)
-//                            O\ = /O
-//                        ____/`---'\____
-//                      .   ' \\| |// `.
-//                       / \\||| : |||// \
-//                     / _||||| -:- |||||- \
-//                       | | \\\ - /// | |
-//                     | \_| ''\---/'' | |
-//                      \ .-\__ `-` ___/-. /
-//                   ___`. .' /--.--\ `. . __
-//                ."" '< `.___\_<|>_/___.' >'"".
-//               | | : `- \`.;`\ _ /`;.`/ - ` : | |
-//                 \ \ `-. \_ __\ /__ _/ .-` / /
-//         ======`-.____`-.___\_____/___.-`____.-'======
-//                            `=---='
-//                 拦截插件累计拦截逗比攻击"1381438"次！
-//         .............................................
-//                  佛祖保佑             永无BUG
-//          佛曰:
-//                  写字楼里写字间，写字间里程序员；
-//                  程序人员写程序，又拿程序换酒钱。
-//                  酒醒只在网上坐，酒醉还来网下眠；
-//                  酒醉酒醒日复日，网上网下年复年。
-//                  但愿老死电脑间，不愿鞠躬老板前；
-//                  奔驰宝马贵者趣，公交自行程序员。
-//                  别人笑我忒疯癫，我笑自己命太贱；
-//                  不见满街漂亮妹，哪个归得程序员？
--->
+<!DOCTYPE html>
+<html>
 <head>
-    <!--[if lte IE 9]>
-<meta http-equiv="refresh" content="0;url=http://yoursite.com/warn.html"><![endif]-->
-<!--[if lt IE 9]>
-<script src="//cdnjscn.b0.upaiyun.com/libs/html5shiv/r29/html5.min.js"></script>
-<script src="//cdnjscn.b0.upaiyun.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-<script src="/js/SimpleCore.js"></script>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="renderer" content="webkit">
-<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-<meta http-equiv="mobile-agent" content="format=html5; url=http://yoursite.com">
-<meta name="author" content="萌九">
-<link rel="stylesheet" media="all" href="/css/SimpleStyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="萌九">
+    
+    
+    
+    
+    
+    
+    <title>archive_a | catcups</title>
+    <link href=”http://yoursite.com“ rel=”prefetch” />
 
-<link rel="shortcut icon" href="/images/favicon.png">
-
-
-<title>归档集- 2019 - catcups</title>
-
-<meta name="keywords" content="undefined">
-
-<meta name="description " content="null">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/aos.css">
+<link rel="stylesheet" href="/css/style.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/highslide/highslide-full.min.js"></script>
+    <link rel="stylesheet" href="/js/highslide/highslide.css">
+    <style type="text/css">
+        @media (max-width: 768px) {
+            body {
+                background-color: #f0f0f0;
+                background: url('/imgs/xsbg.gif');
+                background-attachment: fixed;
+            }
+        }
+    </style>
+    
+    <!--<script type="text/javascript">
+      if (document.images) {
+        var avatar = new Image();
+        avatar.src = '/imgs/avatar.jpg'
+        var previews = 'preview1.jpg,preview2.jpg,preview3.jpg,preview4.jpg'.split(',')
+        var previewsPreLoad = []
+        for(var i = 0; i < length; i++) {
+          previewsPreLoad.push(new Image())
+          previewsPreLoad[previewsPreLoad.length - 1].src = '/imgs/preview' + previews[i]
+        }
+      }
+    </script>-->
 </head>
 <body>
-<div id="nav">
-    <nav class="nav-menu">
-        <a class="site-name current" href="/" title="说IT">说</a>
-        <a class="site-index current" href="/"><i class="fa fa-home"></i><span>首页</span></a>
-        <a href="/archives" title="归档"><i class="fa fa-archives"></i><span>归档</span></a>
-        <a href="/tags" title="标签"><i class="fa fa-tags"></i><span>标签</span></a>
-        <a href="/friendlinks" title="链接"><i class="fa fa-links"></i><span>链接</span></a>
-        <a href="/feedback" title="留言"><i class="fa fa-guestbook"></i><span>留言</span></a>
-        <a href="/about" title="关于"><i class="fa fa-about"></i><span>关于</span></a>
-    </nav>
-</div>
-<div class="nav-user">
-    <a class="btn-search" href="#"><i class="fa fa-search"></i></a>
-    <a class="btn-read-mode" href="#"><i class="fa fa-sun-o"></i></a>
-    <a class="btn-donate" href="javascript:"><i class="fa fa-weixin"></i></a>
-</div>
-<div id="wrapper" class="clearfix">
-    <div id="body">
-        <div class="main" id="main">
-            <div id="cover">
-    <div class="cover-img" style="background-image:url('/images/coverImage.jpg')"></div>
-    <div class="cover-info">
-        <img class="avatar" width="72" src="/images/favicon.png" alt="" />
-        <p>说人文，撸科技</p>
-        <div class="cover-sns">
-            <div class="btn btn-weixin">
-                <a class="" href="javascript:"><i class="fa fa-weixin"></i></a>
-                <div class="qrcode"><img src="/images/weixin-mp.png" alt="weixinQrcode" /></div>
-                <div class="qrcode-arrow"></div>
-            </div>
-            <div class="btn btn-weibo">
-                <a href="https://weibo.com/tangkunyin" target="_blank" rel="nofollow"><i class="fa fa-weibo"></i></a>
-            </div>
-            <div class="btn btn-facebook">
-                <a href="https://fackbook.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-facebook"></i></a>
-            </div>
-            <div class="btn btn-github">
-                <a href="https://github.com/tangkunyin"  target="_blank" rel="nofollow"><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-            <div class="page-title">
-    <ul>
-        <li><a href="/" data-name="首页" title="返回首页">首页</a></li>
-        <li><a href="/tags" data-name="标签云" title="标签云">标签</a></li>
-        <li class="page-search">
-    <form id="search" method="post" action="" role="search">
-        <label for="s" class="sr-only">搜索关键字</label>
-        <input type="text" name="s" class="text" placeholder="输入关键字搜索"/>
-        <button type="submit" class="submit" title="搜索"><i class="fa fa-search"></i></button>
-    </form>
-</li>
+    <!-- 背景轮播图功能 -->
+    <section class="hidden-xs">
+    <ul class="cb-slideshow">
+        <li><span>天若</span></li>
+        <li><span>有情</span></li>
+        <li><span>天亦老</span></li>
+        <li><span>我为</span></li>
+        <li><span>长者</span></li>
+        <li><span>续一秒</span></li>
     </ul>
-</div>
-<div class="main-inner">
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-        <div class="post-header">
-            <h3 class="post-title">坦率的讲 - 本站目前共计3篇文章</h3>
+</section>
+    <!-- 欧尼酱功能, 谁用谁知道 -->
+    
+    <header class="navbar navbar-inverse" id="gal-header">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed"
+                    data-toggle="collapse" data-target=".bs-navbar-collapse"
+                    aria-expanded="false">
+                <span class="fa fa-lg fa-reorder"></span>
+            </button>
+            <a href="http://yoursite.com">
+                
+                <style>
+                    #gal-header .navbar-brand {
+                        height: 54px;
+                        line-height: 24px;
+                        font-size: 28px;
+                        opacity: 1;
+                        background-color: rgba(0,0,0,0);
+                        text-shadow: 0 0 5px #fff,0 0 10px #fff,0 0 15px #fff,0 0 20px #228DFF,0 0 35px #228DFF,0 0 40px #228DFF,0 0 50px #228DFF,0 0 75px #228DFF;
+                    }
+                </style>
+                <!-- 这里使用文字(navbar_text or config.title) -->
+                <div class="navbar-brand">catcups</div>
+                
+            </a>
         </div>
-        <div class="post-content markdown-body" itemprop="articleBody">
-            <div class="archives">
+        <div class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav" id="menu-gal">
+                
+                
+                <li class="">
+                    <a href="/">
+                        <i class="fa fa-home"></i>首页
+                    </a>
+                </li>
+                
+                
+                
+                <li class="current">
+                    <a href="/archives">
+                        <i class="fa fa-archive"></i>归档
+                    </a>
+                </li>
+                
+                
+                
+                
+                <li class="">
+                    <a href="/categories">
+                        <i class="fa fa-list"></i>分类
+                    </a>
+                </li>
                 
                 
                 
                 
                 
-                <div class="archives-item">
-                    <h2>2019年05月</h2>
-                    <ul class="archives_list">
+                <li class="dropdown">
+                    <!-- TODO 添加hover dropdown效果 -->
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false" data-hover="dropdown">
+                        <i class="fa fa-tags"></i>标签
+                    </a>
+                    <ul class="dropdown-menu">
                         
-                        <li>31日19:46:39
-                            <a href="/2019/05/31/看看/">文章名</a>
+                        
+                        <li>
+                            <a href="/tags/iOS/">iOS</a>
                         </li>
                         
-                
-                
-                
-                        <li>31日00:00:00
-                            <a href="/2019/05/31/文章名/">文章名</a>
-                        </li>
                         
-                
-                
-                
-                        <li>30日20:10:36
-                            <a href="/2019/05/30/文章名 - 副本/">文章名</a>
-                        </li>
                         
                     </ul>
-                </div>
+                </li>
                 
+                
+                
+                
+                <li class="">
+                    <a href="/about">
+                        <i class="fa fa-user"></i>关于我
+                    </a>
+                </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</header>
+    <div id="gal-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 gal-right" id="mainstay">
+                    <article class="article well article-body" id="article-archive">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://yoursite.com">catcups</a>
+        >
+        <span>归档</span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/archives">归档</a>
+            </h1>
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/archives">归档</a>
+                </h4>
+            </div>
+        </center>
+    </div>
+    <div class="content-article" style="margin-top: 30px;">
+        
+        
+            <h1 style="font-size: 24px; margin-top: 40px;">2019年</h1>
+            
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+             
+             
+                        <a href="/2019/05/31/看看/">文章名</a>
+                        <br>
+            
+             
+                        <a href="/2019/05/31/文章名/">文章名</a>
+                        <br>
+            
+             
+                        <a href="/2019/05/30/文章名 - 副本/">文章名</a>
+                        <br>
+            
+             
+                        </div>
+                    <h1 style="font-size: 24px; margin-top: 40px;">2018年</h1>
+                    <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+                 
+             
+                        <a href="/2018/09/29/换电脑后转移HEXO博客以及一些问题的解决/">换电脑后转移HEXO博客以及一些问题的解决</a>
+                        <br>
+            
+             
+                        </div>
+                    <h1 style="font-size: 24px; margin-top: 40px;">2017年</h1>
+                    <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+                 
+             
+                        <a href="/2017/12/25/测二试/">测二试</a>
+                        <br>
+            
+             
+                        <a href="/2017/10/03/试试/">试试</a>
+                        <br>
+            
+             
+                        <a href="/2017/09/29/测2试/">测2试</a>
+                        <br>
+            
+             
+                        <a href="/2017/09/20/测一试/">测一试</a>
+                        <br>
+            
+             
+                        <a href="/2017/08/15/测试/">测试</a>
+                        <br>
+            
+             
+                        <a href="/2017/02/09/利用github.io+HEXO搭建个人博客(mac系统)/">利用github.io+HEXO搭建个人博客(mac系统)</a>
+                        <br>
+            
+                    </div>
+        
+    </div>
+</article>
+                </div>
+                <aside class="col-md-4 gal-left" id="sidebar">
+    <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
+<aside id="sidebar-search">
+    <div class="search hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <form class="form-inline clearfix" id="search-form" method="get"
+              action="/search/index.html">
+            <input type="text" name="s" class="form-control" id="searchInput" placeholder="搜索文章~" autocomplete="off">
+            <button class="btn btn-danger btn-gal" type="submit">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </div>
+</aside>
+    <aside id="sidebar-author">
+    <div class="panel panel-gal" data-aos="flip-right" data-aos-duration="3000">
+        <div class="panel-heading" style="text-align: center">
+            <i class="fa fa-quote-left"></i>
+            萌九
+            <i class="fa fa-quote-right"></i>
+        </div>
+        <div class="author-panel text-center">
+            <img src="/imgs/avatar.jpg" width="140" height="140"
+                 alt="个人头像" class="author-image">
+            <p class="author-description"></p>
+        </div>
+    </div>
+</aside>
+    
+    <aside id="sidebar-recent_comments">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-comments"></i>
+            最新评论
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
+    
+    <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    
+    <aside id="sidebar-recent_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            近期文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/05/31/看看/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/05/31/文章名/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/05/30/文章名 - 副本/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/09/29/换电脑后转移HEXO博客以及一些问题的解决/">换电脑后转移HEXO博客以及一些问题的解决</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/12/25/测二试/">测二试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/10/03/试试/">试试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/09/29/测2试/">测2试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/09/20/测一试/">测一试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/08/15/测试/">测试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/02/09/利用github.io+HEXO搭建个人博客(mac系统)/">利用github.io+HEXO搭建个人博客(mac系统)</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="sidebar-rand_posts">
+    <div class="panel panel-gal recent hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-refresh"></i>
+            随机文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush">
+            
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/02/09/利用github.io+HEXO搭建个人博客(mac系统)/">利用github.io+HEXO搭建个人博客(mac系统)</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2018/09/29/换电脑后转移HEXO博客以及一些问题的解决/">换电脑后转移HEXO博客以及一些问题的解决</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/05/30/文章名 - 副本/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/05/31/文章名/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/09/29/测2试/">测2试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/09/20/测一试/">测一试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/12/25/测二试/">测二试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/08/15/测试/">测试</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/05/31/看看/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/10/03/试试/">试试</a>
+                </span>
+            </li>
+            
+        </ul>
+    </div>
+</aside>
+    
+    
+    <aside id="gal-sets">
+        <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+            <ul class="nav nav-pills pills-gal">
+
+                
+                <li>
+                    <a href="/archives/2019/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/archives/2019/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                </li>
+                
+                
+                <li>
+                    <a href="/archives/2019/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                </li>
+                
+            </ul>
+            <div class="tab-content">
+                
+                <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
+    
+    <a href="/tags/iOS/" style="font-size: 16.880629284726805px;" class="tag-cloud-link">iOS</a>
+    
+</div>
+                
+                
+                <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
+    
+    <li>
+        <a href="http://kdays.net/days/" target="_blank">KDays Forum</a>
+    </li>
+    
+    <li>
+        <a href="http://www.gal123.com/" target="_blank">绅士导航♂</a>
+    </li>
+    
+    <li>
+        <a href="http://www.moe123.com/" target="_blank">萌导航</a>
+    </li>
+    
+</div>
+                
+                
+                <div class="links tab-pane nav bs-sidenav fade" id="sidebar-links">
+    
+    <li>
+        <a href="https://github.com/ZEROKISEKI/" target="_blank">Github</a>
+    </li>
+    
+    <li>
+        <a href="https://coding.net/u/SORA1" target="_blank">Coding</a>
+    </li>
+    
+    <li>
+        <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+</div>
                 
             </div>
         </div>
-    </article>
-</div>
-        </div><!-- end #main-->
-    </div><!-- end #body -->
-    <footer class="footer">
-    <div class="footer-inner">
-        <p>
-            <a href="/about"  title="关于本站">关于</a>&nbsp;
-            &nbsp<em>·</em>&nbsp;&nbsp
-            <a href="/archives" title="联系作者" >归档</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
-            <a href="/tags" title="帮助中心">标签</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
-            <a href="/feedback" title="技术周边">反馈</a>&nbsp;&nbsp<em>·</em>&nbsp;&nbsp
-            <a href="/friendlinks" title="友情链接">友链</a>
-        </p>
-        <p>
-            本站点采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>，已建立<a href="/timeline" id="siteBuildingTime"></a>天<br/>
-            ©2017 基于<a href="http://hexo.io" target="_blank">Hexo</a>搭建
-            ，主题<a href="https://github.com/tangkunyin/hexo-theme-jsimple" target="_blank">JSimple</a>
-            ，感谢<a href="https://coding.net/register?key=bcace447-fa41-4579-9783-86fdf0f723e2" target="_blank">Coding</a>提供免费优质的强力驱动
-        </p>
-    </div>
+    </aside>
     
-<span style="display: none">
-<script src="https://s4.cnzz.com/z_stat.php?id=1261190932&web_id=1261190932" language="JavaScript"></script>
-</span>
-
+</aside>
+            </div>
+        </div>
+    </div>
+    <footer id="gal-footer">
+    <div class="container">
+        Copyright © 2018 萌九 Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>.&nbsp;Theme by <a href="https://github.com/ZEROKISEKI" target="_blank">AONOSORA</a>
+    </div>
 </footer>
+
+<!-- 回到顶端 -->
+<div id="gal-gotop">
+    <i class="fa fa-angle-up"></i>
 </div>
-<div class="fixed-btn">
-    <a class="btn-gotop" href="javascript:"> <i class="fa fa-angle-up"></i></a>
-</div>
-<script>
-    $(function () {
-        SimpleCore.init({
-            url: 'http://yoursite.com',
-            buildingTime: '12/12/2014',
-            usePjax: true,
-            current: $('.post-tags').length > 0 ? 'post' : 'archive',
-            prefix: '_http://yoursite.com',
-            donateImg: '/images/weixin_donate.png'
-        });
-    });
-</script>
 </body>
+<script src="/js/activate-power-mode.js"></script>
+<script>
+
+    // 配置highslide
+	hs.graphicsDir = '/js/highslide/graphics/'
+    hs.outlineType = "rounded-white";
+    hs.dimmingOpacity = 0.8;
+    hs.outlineWhileAnimating = true;
+    hs.showCredits = false;
+    hs.captionEval = "this.thumb.alt";
+    hs.numberPosition = "caption";
+    hs.align = "center";
+    hs.transitions = ["expand", "crossfade"];
+    hs.lang.number = '共%2张图, 当前是第%1张';
+    hs.addSlideshow({
+      interval: 5000,
+      repeat: true,
+      useControls: true,
+      fixedControls: "fit",
+      overlayOptions: {
+        opacity: 0.75,
+        position: "bottom center",
+        hideOnMouseOut: true
+      }
+    })
+
+    // 初始化aos
+    AOS.init({
+      duration: 1000,
+      delay: 0,
+      easing: 'ease-out-back'
+    });
+
+</script>
+<script>
+	POWERMODE.colorful = 'true';    // make power mode colorful
+	POWERMODE.shake = 'true';       // turn off shake
+	// TODO 这里根据具体情况修改
+	document.body.addEventListener('input', POWERMODE);
+</script>
+<script>
+    window.slideConfig = {
+      prefix: '/imgs/slide/background',
+      ext: 'jpg',
+      maxCount: '6'
+    }
+</script>
+<script src="/js/hs.js"></script>
+<script src="/js/blog.js"></script>
+
+
+
 </html>
