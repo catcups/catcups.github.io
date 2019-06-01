@@ -181,7 +181,7 @@
     var p = query.length > 1 ? query[1].split('=')[1] : 1
     // 获取每页的页码数
     var pageSize = '10'
-    var useLeancloud = 'null'
+    var useLeancloud = ''
     var useComment = ('false' === 'true')
     $.getJSON('/content.json', function (json) {
       $('#search-breadcrumb').append(`搜索'${s}'的结果`)
@@ -206,7 +206,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/imgs/preview/preview1.jpg'
+        var defaultPreview = '/imgs/preview/preview4.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -540,13 +540,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/05/31/看看/">文章名</a>
+                    <a href="/2017/10/03/试试/">试试</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2017/10/03/试试/">试试</a>
+                    <a href="/2019/05/31/看看/">文章名</a>
                 </span>
             </li>
             
@@ -579,7 +579,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/iOS/" style="font-size: 16.364118526934636px;" class="tag-cloud-link">iOS</a>
+    <a href="/tags/iOS/" style="font-size: 16.926977006920552px;" class="tag-cloud-link">iOS</a>
     
 </div>
                 
