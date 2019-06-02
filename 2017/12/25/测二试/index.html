@@ -31,6 +31,14 @@
         }
     </style>
     
+    <script src="//cdn1.lncld.net/static/js/3.4.2/av-min.js"></script>
+    <script>
+      AV.init({
+        appId: 'QOeWgaqIptk3QsSNNrAfALka-gzGzoHsz',
+        appKey: '0lx5sQRz8DVC8VbUpBhvNNeu'
+      })
+    </script>
+    
     <!--<script type="text/javascript">
       if (document.images) {
         var avatar = new Image();
@@ -57,24 +65,6 @@
     </ul>
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
-    
-    <div class="gal-menu gal-dropdown">
-    <div class="circle" id="gal">
-        <div class="ring">
-            <a href="http://yoursite.com" class="menuItem" style="left: 50%; top: 15%;">首页</a>
-            
-            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
-            
-            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
-            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
-            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
-            
-            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
-            
-        </div>
-        <audio id="audio" src="/imgs/oni.mp3"></audio>
-    </div>
-</div>
     
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
@@ -196,6 +186,10 @@
                 <i class="fa fa-calendar"></i> 2017-12-25
             </span>
             
+            <span class="label label-gal">
+                <i class="fa fa-eye"></i>
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -217,6 +211,8 @@
                 
                 
                 
+                <i class="fa fa-eye"></i>
+                
             </p>
         </center>
     </div>
@@ -225,6 +221,15 @@
     </div>
 </article>
 
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = '测二试'
+    }
+</script>
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -268,6 +273,18 @@
 </aside>
     
     <!-- 要配置好leancloud才能开启此小工具 -->
+    
+    <aside id="sidebar-hot_posts">
+    <div class="panel panel-gal hot hidden-xs" data-aos="fade-up" data-aos-duration="2000">
+        <div class="panel-heading">
+            <i class="fa fa-fire"></i>
+            最热文章
+            <i class="fa fa-times-circle panel-remove"></i>
+            <i class="fa fa-chevron-circle-up panel-toggle"></i>
+        </div>
+        <ul class="list-group list-group-flush"></ul>
+    </div>
+</aside>
     
     
     <aside id="sidebar-recent_posts">
@@ -358,7 +375,7 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/05/31/文章名/">文章名</a>
+                    <a href="/2017/02/09/利用github.io+HEXO搭建个人博客(mac系统)/">利用github.io+HEXO搭建个人博客(mac系统)</a>
                 </span>
             </li>
             
@@ -370,25 +387,25 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2017/09/29/测2试/">测2试</a>
-                </span>
-            </li>
-            
-            <li class="list-group-item">
-                <span class="post-title">
                     <a href="/2019/05/30/文章名 - 副本/">文章名</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2017/09/20/测一试/">测一试</a>
+                    <a href="/2017/09/29/测2试/">测2试</a>
                 </span>
             </li>
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2017/02/09/利用github.io+HEXO搭建个人博客(mac系统)/">利用github.io+HEXO搭建个人博客(mac系统)</a>
+                    <a href="/2019/05/31/文章名/">文章名</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2017/09/20/测一试/">测一试</a>
                 </span>
             </li>
             
@@ -445,7 +462,7 @@
                 
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/iOS/" style="font-size: 11.218114032433203px;" class="tag-cloud-link">iOS</a>
+    <a href="/tags/iOS/" style="font-size: 13.052874352456477px;" class="tag-cloud-link">iOS</a>
     
 </div>
                 
@@ -552,8 +569,34 @@
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
 
-<script src="/js/oni.js"></script>
+
+<script>
+    window.hot_posts_count = '10'
+    // window.use_leancloud = 'true'
+</script>
+<script src="/js/comment/leancloud.js"></script>
 
 
+<script src="https://myau.moe/js/comment/gitment.browser.js"></script>
+<script>
+    if(window.commentConfig) {
+      window.commentConfig.id = 'Mon Dec 25 2017 19:22:28 GMT+0800'
+      window.commentConfig.owner = ''
+      window.commentConfig.repo = ''
+      window.commentConfig.client_id = ''
+      window.commentConfig.client_secret = ''
+      window.commentConfig.redirect_uri = ''
+    } else {
+      window.commentConfig = {
+      	id: 'Mon Dec 25 2017 19:22:28 GMT+0800',
+        owner: '',
+        repo: '',
+        client_id: '',
+        client_secret: '',
+        redirect_uri: ''
+      }
+    }
+</script>
+<script src="/js/comment/gitment.js"></script>
 
 </html>
