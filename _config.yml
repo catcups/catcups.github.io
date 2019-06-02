@@ -75,3 +75,4 @@ deploy:
   type: git
   repo: https://github.com/catcups/catcups.github.io.git
   branch: master
+  delete: false
