@@ -77,6 +77,6 @@ deploy:
     github:
       https://github.com/catcups/catcups.github.io.git
   coding: 
-      git@git.coding.net:littleluck/littleluck.coding.me.git
+      git@git.dev.tencent.com:littleluck/catcups.git
   branch: master
   delete: false
