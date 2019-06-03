@@ -73,6 +73,10 @@ favicon: /favicon.ico
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/catcups/catcups.github.io.git
+  repo: 
+    github:
+      https://github.com/catcups/catcups.github.io.git
+  coding: 
+      git@git.coding.net:littleluck/littleluck.coding.me.git
   branch: master
   delete: false
